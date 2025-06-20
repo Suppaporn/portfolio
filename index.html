@@ -39,6 +39,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
+            padding: 20px;
         }
         .education-item {
             background: white;
@@ -120,6 +121,74 @@
         .activity-image:hover {
             transform: scale(1.05);
         }
+        /* iPad and smaller screens */
+        @media screen and (max-width: 1024px) {
+            .profile-image {
+                width: 3in;
+            }
+            .school-logo {
+                width: 80px;
+            }
+            .education-item {
+                padding: 15px;
+            }
+            .education-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .activity-image {
+                width: 300px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Tablet and smaller screens */
+        @media screen and (max-width: 768px) {
+            .profile-image {
+                width: 2.5in;
+            }
+            .school-logo {
+                width: 60px;
+            }
+            .education-item {
+                padding: 10px;
+            }
+            .education-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .activity-image {
+                width: 250px;
+            }
+            .activities-container {
+                gap: 10px;
+            }
+        }
+
+        /* Mobile screens */
+        @media screen and (max-width: 480px) {
+            .profile-image {
+                width: 2in;
+            }
+            .school-logo {
+                width: 50px;
+            }
+            .education-item {
+                padding: 10px;
+            }
+            .education-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .activity-image {
+                width: 200px;
+            }
+            .activities-container {
+                gap: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -138,6 +207,7 @@
                     <p>เชื้อชาติ: ไทย</p>
                     <p>ศาสนา: พุทธ</p>
                 </div>
+                <div style="height: 30px;"></div>
                 <div class="skills-container">
                     <h2>ความสามารถ</h2>
                     <div class="skills-grid">
