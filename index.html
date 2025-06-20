@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: #FFE4E1;
+            color: #663300;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .profile-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .profile-image {
+            width: 4in;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .skills-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .education-section {
+            padding: 40px 0;
+        }
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .education-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .school-logo {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .gallery-section {
+            padding: 40px 0;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-image {
+            aspect-ratio: 16/9;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+        h2, h3 {
+            color: #996600;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            color: #663300;
+        }
+        .profile-info {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .profile-info h3 {
+            color: #996600;
+            margin-bottom: 15px;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #663300;
+        }
+        .activities-section {
+            padding: 40px 0;
+            background-color: white;
+        }
+        .activities-container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+        }
+        .activity-image {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        .activity-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Profile -->
+        <section class="profile-section">
+            <div class="profile-container">
+                <img src="images/23.jpg" alt="Profile Picture" class="profile-image">
+                <div class="profile-info">
+                    <h3>ประวัติส่วนตัว</h3>
+                    <p>ชื่อ-นามสกุล: นางสาว ศุภภร โสมปาน</p>
+                    <p>ชื่อเล่น: ใบหม่อน</p>
+                    <p>อายุ: 22 ปี</p>
+                    <p>วันเกิด: 11 กรกฎาคม พ.ศ. 2545</p>
+                    <p>สัญชาติ: ไทย</p>
+                    <p>เชื้อชาติ: ไทย</p>
+                    <p>ศาสนา: พุทธ</p>
+                </div>
+                <div class="skills-container">
+                    <h2>ความสามารถ</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>โปรแกรมที่ถนัด</h3>
+                            <ul>
+                                <li>Canva</li>
+                                <li>Microsoft Office</li>
+                                <li>Adobe</li>
+                                <li>Scratch</li>
+                                <li>Flowgorithm</li>
+                                <li>Maya</li>
+                                <li>Sketchup</li>
+                                <li>Capcut</li>
+                                <li>PyCharm</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>ทักษะด้านอื่นๆ</h3>
+                            <ul>
+                                <li>การทำงานเป็นทีม</li>
+                                <li>การผลิตสื่อการสอน</li>
+                                <li>การสร้างแอนิเมชัน 2D, 3D</li>
+                                <li>การแต่งภาพและวิดีโอ</li>
+                                <li>การถ่ายภาพ / วิดีโอ</li>
+                                <li>การคิดเชิงวิพากษ์ และการสื่อสาร</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Education -->
+        <section class="education-section">
+            <div class="education-container">
+                <div class="education-item">
+                    <img src="images/333.jpg" alt="โรงเรียนเทศบาล 3 (สระกระเทียม)" class="school-logo">
+                    <h3>ระดับประถมศึกษา</h3>
+                    <p>โรงเรียนเทศบาล 3 (สระกระเทียม)</p>
+                    <p>ระหว่างปีการศึกษา 2546 - 2551</p>
+                </div>
+                <div class="education-item">
+                    <img src="images/psc001.jpg" alt="โรงเรียนสิรินธรราชวิทยาลัย" class="school-logo">
+                    <h3>ระดับมัธยมศึกษา</h3>
+                    <p>โรงเรียนสิรินธรราชวิทยาลัย</p>
+                    <p>สาขา ศิลป์อังกฤษ ไทย สังคม</p>
+                    <p>ระหว่างปีการศึกษา 2551 - 2564</p>
+                </div>
+                <div class="education-item">
+                    <img src="images/imagesbansomdejlogo.png" alt="มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา" class="school-logo">
+                    <h3>ระดับปริญญาตรี</h3>
+                    <p>มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา</p>
+                    <p>คณะ ครุศาสตร์ สาขา เทคโนโลยีดิจิทัลเพื่อการศึกษา</p>
+                    <p>เกียรตินิยมอันดับ 1</p>
+                    <p>ระหว่างปีการศึกษา 2564 - 2568</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Activities -->
+        <section class="activities-section">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 30px;">Performance</h1>
+                <h2 style="text-align: center; margin-bottom: 30px;">ผลงาน</h2>
+                <div class="activities-container">
+                    <img src="images/43.png" alt="Activity 1" class="activity-image">
+                    <img src="images/44.png" alt="Activity 2" class="activity-image">
+                    <img src="images/45.png" alt="Activity 3" class="activity-image">
+                    <img src="images/46.png" alt="Activity 4" class="activity-image">
+                    <img src="images/47.png" alt="Activity 5" class="activity-image">
+                    <img src="images/48.png" alt="Activity 6" class="activity-image">
+                    <img src="images/49.png" alt="Activity 7" class="activity-image">
+                    <img src="images/50.png" alt="Activity 8" class="activity-image">
+                    <img src="images/51.png" alt="Activity 9" class="activity-image">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

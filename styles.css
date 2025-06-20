@@ -1,0 +1,141 @@
+/* Global Styles */
+:root {
+    --background-color: #FFE4E1;
+    --main-text-color: #663300;
+    --subtext-color: #996600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 10in;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skills-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-category {
+    padding: 20px;
+}
+
+.skill-category h3 {
+    color: var(--subtext-color);
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: var(--subtext-color);
+}
+
+/* Education Section */
+.education-section {
+    padding: 40px 0;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.education-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.school-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    color: var(--subtext-color);
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-image {
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 8in;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
