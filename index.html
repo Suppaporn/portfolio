@@ -121,6 +121,25 @@
         .activity-image:hover {
             transform: scale(1.05);
         }
+        .activities-container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .activity-image {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        .activities-section {
+            margin-top: 50px;
+        }
         /* iPad and smaller screens */
         @media screen and (max-width: 1024px) {
             .profile-image {
@@ -283,6 +302,31 @@
                     <img src="images/49.png" alt="Activity 7" class="activity-image">
                     <img src="images/50.png" alt="Activity 8" class="activity-image">
                     <img src="images/51.png" alt="Activity 9" class="activity-image">
+                </div>
+            </div>
+        </section>
+        
+          <section class="activities-section">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 30px;">Performance</h1>
+                <h2 style="text-align: center; margin-bottom: 30px;">ผลงาน</h2>
+                <div class="activities-container">
+                    <img src="images/1.png" alt="Activity 1" class="activity-image">
+                    <img src="images/2.png" alt="Activity 2" class="activity-image">
+                    <img src="images/3.png" alt="Activity 3" class="activity-image">
+                    <img src="images/4.png" alt="Activity 4" class="activity-image">
+                    <img src="images/5.png" alt="Activity 5" class="activity-image">
+                    <img src="images/6.png" alt="Activity 6" class="activity-image">
+                    <img src="images/7.png" alt="Activity 7" class="activity-image">
+                    <img src="images/8.png" alt="Activity 8" class="activity-image">
+                    <img src="images/9.png" alt="Activity 9" class="activity-image">
+                    <img src="images/10.png" alt="Activity 1" class="activity-image">
+                    <img src="images/11.png" alt="Activity 2" class="activity-image">
+                    <img src="images/12.png" alt="Activity 3" class="activity-image">
+                    <img src="images/13.png" alt="Activity 4" class="activity-image">
+                    <img src="images/14.png" alt="Activity 5" class="activity-image">
+                    <img src="images/15.png" alt="Activity 6" class="activity-image">
+                    <img src="images/16.png" alt="Activity 7" class="activity-image">
                 </div>
             </div>
         </section>
